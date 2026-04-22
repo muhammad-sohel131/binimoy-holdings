@@ -6,6 +6,7 @@ import { BiMoon } from 'react-icons/bi'
 import { SiUnity } from 'react-icons/si'
 import { FaX } from 'react-icons/fa6'
 import { FcMenu } from 'react-icons/fc'
+import Image from 'next/image'
 const NAV_LINKS = [
   {
     name: 'Home',
@@ -57,12 +58,12 @@ export function Navbar() {
   }, [])
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 dark:bg-navy-900/95 backdrop-blur-md shadow-lg py-4' : 'bg-transparent py-6'}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 dark:bg-navy-900/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}
     >
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="flex items-center justify-between">
           <Link href="#home" className="flex items-center gap-2 group">
-            <LuBuilding2 className="w-8 h-8 text-gold-500 group-hover:text-gold-600 dark:group-hover:text-gold-400 transition-colors" />
+            <Image src="/logo.png" alt="Binimoy Logo" className="w-20 h-20" width={100} height={100}/>
             <span
               className={`font-display text-2xl font-bold tracking-wider ${isScrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`}
             >

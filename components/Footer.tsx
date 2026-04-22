@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
@@ -10,7 +11,8 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           <div className="flex flex-col items-center md:items-start">
             <Link href="#home" className="flex items-center gap-2 mb-4">
-              <LuBuilding2 className="w-8 h-8 text-gold-500" />
+              
+              <Image src="/logo.png" alt="Binimoy Logo" className="w-24 h-24" width={100} height={100}/>
               <span className="font-display text-2xl font-bold tracking-wider text-white">
                 BINIMOY
               </span>

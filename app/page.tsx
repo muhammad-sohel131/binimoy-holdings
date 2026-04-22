@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
 import { ProjectsSection } from "@/components/ProjectSection";
+import { ServicesSection } from "@/components/ServicesSection";
 import { ThemeProvider } from "@/components/ThemeContext";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
           <HeroSection />
           <AboutSection />
           <ProjectsSection />
+          <ServicesSection />
         </main>
         <Footer />
       </div>
