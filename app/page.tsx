@@ -6,6 +6,7 @@ import { Navbar } from "@/components/Navbar";
 import { ProjectsSection } from "@/components/ProjectSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ThemeProvider } from "@/components/ThemeContext";
+import { WhyChooseUsSection } from "@/components/WhyChoseUsSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           <AboutSection />
           <ProjectsSection />
           <ServicesSection />
+          <WhyChooseUsSection />
         </main>
         <Footer />
       </div>
